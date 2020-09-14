@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="text">
+        
+    </div>
+
+    <script>
+        var num = window.prompt("Enter your phone number starting with +380:")
+        var isTrue = true
+        console.log(num.length)
+        while (isTrue) {
+            if (num.length == 13 && num.slice(0, 4) == "+380") {
+                isTrue = false
+            }
+            else {
+                alert("Invalid input. Try again (Don't forget to type +380)")
+                var num = window.prompt("Enter your phone number including +380:")
+            }
+        }
+        var newNum = num.slice(0, 3) + " (" + num.slice(3, 6) + ") " + num.slice(6, 9) + "-" + num.slice(9, 11) + "-" + num.slice(11, 13)
+        alert("Your phone num is: " + newNum)
+    </script>
+
+</body>
+</html>
