@@ -1,1 +1,0 @@
-window.alert("Hey! How is going on?")
