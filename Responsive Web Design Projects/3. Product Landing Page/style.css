@@ -1,0 +1,140 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: rgb(218, 217, 217);
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.grid p {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+h2 {
+    padding: 10px 0;
+    margin: 0;
+}
+
+header {
+    background: rgb(180, 225, 255);
+    width: 100%;
+    padding: 10px 100px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+}
+
+.logo {
+    width: 20vw;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    max-width: 230px;
+    display: flex;
+}
+
+nav {
+    width: 70%;
+    float: right;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
+
+li {
+    margin: 10px 50px;
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+#subheader {
+    background: rgb(180, 225, 255);
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 20px;
+}
+
+#form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#email{
+    width: 15%;
+    height: 20px;
+    background-color: rgb(218, 240, 253);
+    border: 2px solid;
+}
+
+button {
+    padding: 10px 0;
+    margin: 20px 0;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    width: 10%;
+    background-color: rgb(110, 110, 255);
+    color: #fff;
+    cursor: pointer;
+    transition: transform .1s, background-color .1s linear ;
+}
+
+button:hover {
+    background-color: rgb(139, 185, 250);
+    transform: scale(1.05);
+}
+
+.container {
+    background: rgb(182, 191, 219);
+    text-align: center;
+    width: 70%;
+    padding: 10px 20px;
+    margin: 0 auto;
+}
+
+.desc {
+    padding: 0;
+}
+
+#prices {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.product {
+    width: 33%;
+    border: 1px solid #000;
+    margin: 50px 10px;
+}
+
+#prodct-image {
+    width: 90%;
+}
+
+#prices button {
+    width: 50%;
+    
+}
+
+footer {
+    text-align: center;
+}

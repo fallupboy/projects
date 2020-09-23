@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <img id="header-logo" src="/images/logo.png" alt="Not Found">
+        </div>
+        <nav id="nav-bar">
+            <ul>
+                <li>
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#presentation">Description</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#prices">Prices</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="subheader">
+        <h2>Delecious & light meals is waiting for you</h2>
+        <form id="form" action="submit">
+            <input id="email" name="email"  type="email" placeholder="Enter your email address" required>
+            <button id="submit" type="submit" action="https://www.freecodecamp.com/email-submit" сlass="submit-btn">Get started</button>
+        </form>
+    </section>
+
+    <div class="container">
+        <section id="features">
+            <div class="grid">
+                <div class="desc">
+                    <h2>High Quality</h2>
+                    <p>Natural products are good to consume</p>
+                </div>
+                <div class="desc">
+                    <h2>Low Price</h2>
+                    <p>Our food is available for everyone</p>
+                </div>
+                <div class="desc">
+                    <h2>Since 1993</h2>
+                    <p>Our company has great experience in making tasty food</p>
+                </div>
+            </div>
+        </section>
+        <section id="presentation">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/LKmZ257MFo8" frameborder="0"></iframe>
+        </section>
+        <section id="prices">
+            <div class="product">
+                <p>Healthy Heart Fish Taco</p>
+                <h2>5.99$</h2>
+                <img id="prodct-image" src="/images/taco.png" alt="Not Found">
+                <button id="submit" type="submit" сlass="submit-btn">Select</button>
+            </div>
+            <div class="product">
+                <p>Cholesterol-Lowering Broccoli Casserole</p>
+                <h2>10.99$</h2>
+                <img id="prodct-image" src="/images/broccoli.png" alt="Not Found">
+                <button id="submit" type="submit" сlass="submit-btn">Select</button>
+            </div>
+            <div class="product">
+                <p>Easy Whole Wheat Pasta</p>
+                <h2>15.99$</h2>
+                <img id="prodct-image" src="/images/pasta.png" alt="Not Found">
+                <button id="submit" type="submit" сlass="submit-btn">Select</button>
+            </div>
+        </section>
+        <footer class="footer">
+            <p>Copyright &copy; 2020, Luchka Eagle</p>
+        </footer>
+    </div>
+</body>
+</html>
