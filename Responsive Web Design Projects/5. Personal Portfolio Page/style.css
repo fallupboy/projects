@@ -1,0 +1,151 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    background: linear-gradient(#ffa2a2, #e5aaaa);
+    background-attachment: fixed;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    top: 0;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    padding: 20px 20px;
+    background-color: rgb(255, 172, 172);
+    box-shadow: 0 2px rgba(24, 23, 23, 0.425);
+}
+
+#nav-link {
+    padding-right: 25px;
+}
+
+a {
+    font-size: 25px;
+    padding: 0;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: color .1s linear;
+}
+
+a:hover {
+    color: rgb(255, 255, 255); 
+}
+
+nav a {
+    padding: 0 25px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 30px 0;
+    font-style: bold;
+}
+
+#welcome-subtext, #contact-subtitle {
+    font-style: italic;
+}
+
+#welcome {
+    background: linear-gradient(#f73c3c, #bed8ff);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-size: 35px;
+}
+
+#projects {
+    background: linear-gradient(#ff6027, #bed8ff );
+    background-attachment: fixed;
+    padding-top: 100px;
+}
+
+.projects_block {
+    display: flex;
+    flex-direction: row;
+}
+
+.projects_block p {
+    padding-top: 25px;
+}
+
+.projects-header {
+    font-size: 35px;
+    text-align: center;
+    max-width: 700px;
+    margin: 25px auto;
+    padding: 10px;
+    border-bottom: 2px solid black;
+}
+
+.project_section {
+    padding: 30px;
+}
+
+.project_section img {
+    width: 100%;
+    box-shadow: 0 2px rgba(24, 23, 23, 0.425);
+    transition: transform .15s linear;
+}
+
+.project_section img:hover {
+    transform: scale(1.05);
+}
+
+img#last-child {
+    display: block;
+    margin: 0 auto;
+    width: 65%;
+}
+
+.text_block {
+    text-align: center;
+}
+
+#contact {
+    padding: 100px 0;
+}
+
+.contact_text {
+    text-align: center;
+    font-size: 25px;
+}
+
+#contact-title {
+    padding: 10px 0;;
+}
+
+.contact_link {
+    font-size: 25px;
+    text-align: center;
+    width: 49%;
+    float: left;
+    margin: .5%;
+}
+
+.contact_link img {
+    padding: 20px;
+    width: 20%;
+    transition: transform .1s linear;
+}
+
+.contact_link img:hover {
+    transform: scale(1.2);
+}
+
+.contact_link p {
+    padding-bottom: 100px;
+}
