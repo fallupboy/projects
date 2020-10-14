@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="survey-form">
+            <header class="header">
+                <h1 id="title" class="text-center">Luchka's Survey Form</h1>
+                <p id="description" class="description text-center">You are welcomed to fill this survey form</p>
+            </header>
+            <div class="form-group">
+                <p id="name-label">Name</p>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <p id="email-label">Email</p>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <p id="number-label">Age</p>
+                <input type="number" name="age" id="number" class="form-control" placeholder="Enter your age">
+            </div>
+
+            <div class="form-group">
+                <p>Rate yourself from 1-5</p>
+                <select name="rate" id="dropdown1" class="form-control">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>How are you going to work?</p>
+                <label>
+                    <input name="user-recommend" value="definetly" type="radio" class="input-radio" checked>Full-Time</input>
+                </label>
+                <label>
+                    <input name="user-recommend" value="definetly" type="radio" class="input-radio">Part-Time</input>
+                </label>
+                <label>
+                    <input name="user-recommend" value="definetly" type="radio" class="input-radio">I don't know</input>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>What monthly salary do you want to receive?</p>
+                <select name="rate" id="dropdown" class="form-control">
+                    <option value="less100">Less than 100$</option>
+                    <option value="100-200">100$ - 300$</option>
+                    <option value="200-400">300$ - 500$</option>
+                    <option value="more500">More than 500$</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Which traits describe you mostly?</p>
+                <label>
+                    <input name="prefer" value="front-end-project" type="checkbox" class="input-checkbox">Honesty</option>
+                </label>
+                <label>
+                    <input name="prefer" value="front-end-project" type="checkbox" class="input-checkbox">Flexibility</option>
+                </label>
+                <label>
+                    <input name="prefer" value="front-end-project" type="checkbox" class="input-checkbox">Determination</option>
+                </label>
+                <label>
+                    <input name="prefer" value="front-end-project" type="checkbox" class="input-checkbox">Loyalty</option>
+                </label>
+                <label>
+                    <input name="prefer" value="front-end-project" type="checkbox" class="input-checkbox">Competency</option>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>Comments or suggestions?</p>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment..."></textarea>
+            </div>
+
+            <div class="form-group btn">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
