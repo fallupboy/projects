@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Placeholer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Members</h1>
+        <div class="main_block">
+            <div class="members_list">
+            </div>
+            <div class="member_desc" style="opacity: 0;">
+                <img class="member_img" src="" alt="Not found">
+                <div class="block">
+                    <p>Name:</p>
+                    <p id="member_name"></p>
+                </div>
+                <div class="block">
+                    <p>Date of birth:</p>
+                    <p id="member_dateofbirth"></p>
+                </div>
+                <div class="block">
+                    <p>Job:</p>
+                    <p id="member_info"></p>
+                </div>
+            </div>
+        </div>
+        <button class="addmember_button" onClick="popupWindow">Add member</button>
+    </div>
+    <div id="myPopup" class="addmember_popup">
+        <div class="addmember_content">
+            <span class="close">&times;</span>
+            <div class="form-group">
+                <p id="name-label">Member's photo URL (Upload photo here &#8594; "https://imgbb.com/upload" and attach URL with .jpg at the end of your photo link)</p>
+                <input type="text" name="photo" id="photo" class="form-control" placeholder="Enter URL">
+            </div>
+            <div class="form-group">
+                <p id="name-label">Name</p>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter member's full name">
+            </div>
+            <div class="form-group">
+                <p id="number-label">Date of birth (dd.mm.yyyy)</p>
+                <input type="date" name="date" id="number" class="form-control" placeholder="Enter member's date of birth">
+            </div>
+            <div class="form-group">
+                <p id="name-label">Job</p>
+                <input type="text" name="job" id="job" class="form-control" placeholder="Enter member's job name">
+            </div>
+            <div class="form-group btn">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
